@@ -1,18 +1,15 @@
 # travis-ci
 os: linux
-dist: trusty
-language: node_js
-node_js:
-  - '10'
-  - '12'
-  - '14'
+dist: xenial
+lang: generic
+
+before-install: npm install ganache-core && cd node_modules/ganache-core/node_modules/web3-provider-engine && npm install && npm i --global truffle@5.1.20
+git:
+  quiet: true
+
+cache: npm
+
 install:
-  - yarn
-script:
-  - yarn run lint
-  - yarn run test
-after_script:
-  - yarn run coverage
-branches:
-  only:
-  - master
+  - npm install
+  
+script: true
