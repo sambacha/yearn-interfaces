@@ -1,0 +1,18 @@
+# travis-ci
+os: linux
+dist: trusty
+language: node_js
+node_js:
+  - '10'
+  - '12'
+  - '14'
+install:
+  - yarn
+script:
+  - yarn run lint
+  - yarn run test
+after_script:
+  - yarn run coverage
+branches:
+  only:
+  - master

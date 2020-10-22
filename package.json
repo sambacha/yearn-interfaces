@@ -1,0 +1,70 @@
+{
+  "name": "@yfi/interface-contracts",
+  "version": "0.1.0",
+  "description": "Solidity Library for Yearn Finance/YFI",
+  "files": [
+    "/contracts/**/*.sol",
+    "/build/contracts/*.json",
+    "!/contracts/mocks",
+    "!/contracts/examples",
+    "/test/behaviors"
+  ],
+  "scripts": {
+    "compile": "scripts/compile.sh",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "lint:fix": "npm run lint:js:fix",
+    "lint:js": "eslint --ignore-path .gitignore .",
+    "lint:js:fix": "eslint --ignore-path .gitignore . --fix",
+    "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
+    "prepublish": "rimraf build contracts/build",
+    "prepare": "npm run compile",
+    "solium": "solium -d .",
+    "prepack": "node scripts/remove-ignored-artifacts.js",
+    "release": "scripts/release/release.sh",
+    "version": "scripts/release/version.sh",
+    "cov:suite-0": "scripts/coverage.js",
+    "cov:suite-1": "scripts/coverage.sh && cat coverage/lcov.info | coveralls",
+    "test": "mocha --exit --timeout 0 --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sambacha/yfi-interface-contracts.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "defi",
+    "yfi"
+  ],
+  "author": "yearn finance community <maintainers@yy.finance>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OpenZeppelin/yfi-interface-contracts/issues"
+  },
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/test-environment": "^0.1.6",
+    "@openzeppelin/test-helpers": "^0.5.7",
+    "chai": "^4.2.0",
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mocha-no-only": "^1.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "ethereumjs-util": "^7.0.7",
+    "ganache-cli": "^6.12.0",
+    "lodash.startcase": "^4.4.0",
+    "lodash.zip": "^4.2.0",
+    "micromatch": "^4.0.2",
+    "mocha": "^8.2.0",
+    "rimraf": "^3.0.2",
+    "solhint": "^3.2.2",
+    "solidity-coverage": "^0.7.11",
+    "solidity-docgen": "^0.5.7"
+  },
+  "dependencies": {}
+}
