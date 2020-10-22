@@ -47,7 +47,7 @@ shasum:        85be0cafad7ecd37cd6b2a0fc8ecb6eaf9eca73d  <br>
 integrity:     sha512-qnHSQSDZql8U3[...]jurEOQMRqqdtQ==  <br>
 total files:   17  <br>
 
- <br>
+ 
 ## Security
 
 | Point of contact  |  Method  |
