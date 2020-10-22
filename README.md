@@ -27,8 +27,6 @@
 | Version 0.5.17 | MDc6UmVsZWFzZTI0NjAzMTk5 | Thu Oct 22 01:52:40 UTC 2020 |
 | Version 0.6.0 | MDc6UmVsZWFzZTIwMzg2Njkz | Thu Oct 22 01:58:22 UTC 2020 |
 
-
-
 ## Files
 
 - Converter.sol 
@@ -38,6 +36,17 @@
 - Strategy.sol  
 - Token.sol 
 - Vault.sol
+
+### Latest Build
+
+name:          @yfi/interface-contracts
+version:       0.1.0
+package size:  13.3 kB
+unpacked size: 165.8 kB
+shasum:        85be0cafad7ecd37cd6b2a0fc8ecb6eaf9eca73d
+integrity:     sha512-qnHSQSDZql8U3[...]jurEOQMRqqdtQ==
+total files:   17
+
 
 ## Security
 
