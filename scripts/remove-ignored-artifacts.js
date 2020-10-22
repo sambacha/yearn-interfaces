@@ -1,4 +1,3 @@
-
 #!/usr/bin/env node
 
 // This script removes the build artifacts of ignored contracts.
