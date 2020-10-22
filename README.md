@@ -39,15 +39,15 @@
 
 ### Latest Build
 
-name:          @yfi/interface-contracts
-version:       0.1.0
-package size:  13.3 kB
-unpacked size: 165.8 kB
-shasum:        85be0cafad7ecd37cd6b2a0fc8ecb6eaf9eca73d
-integrity:     sha512-qnHSQSDZql8U3[...]jurEOQMRqqdtQ==
-total files:   17
+name:          @yfi/interface-contracts <br>
+version:       0.1.0  <br>
+package size:  13.3 kB  <br>
+unpacked size: 165.8 kB  <br>
+shasum:        85be0cafad7ecd37cd6b2a0fc8ecb6eaf9eca73d  <br>
+integrity:     sha512-qnHSQSDZql8U3[...]jurEOQMRqqdtQ==  <br>
+total files:   17  <br>
 
-
+ <br>
 ## Security
 
 | Point of contact  |  Method  |
